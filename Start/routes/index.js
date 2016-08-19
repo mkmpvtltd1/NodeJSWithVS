@@ -25,7 +25,7 @@ exports.contactME = function (req, res) {
     var nodemailer = require('nodemailer');
 
     // create reusable transporter object using the default SMTP transport 
-    var transporter = nodemailer.createTransport('smtps://mkmpvtltd%40gmail.com:CommandCom456@smtp.gmail.com');
+    var transporter = nodemailer.createTransport('smtps://mkmpvtltd%40gmail.com:Password@smtp.gmail.com');
 
     // send mail with defined transport object 
     transporter.sendMail(mailOptions, function (error, info) {

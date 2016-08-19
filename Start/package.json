@@ -1,0 +1,15 @@
+{
+  "name": "start",
+  "version": "0.0.0",
+  "description": "Start",
+  "main": "app.js",
+  "author": {
+    "name": "Manoj's PC"
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "nodemailer": "^2.5.0",
+    "stylus": "*"
+  }
+}

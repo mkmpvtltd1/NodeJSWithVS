@@ -23,9 +23,10 @@ exports.contactME = function (req, res) {
         html: '<b>Hello world 🐴</b>' // html body 
     };
     var nodemailer = require('nodemailer');
-
+    var config = require('config');
+    var transpostString = config.get("Email.Transporter");
     // create reusable transporter object using the default SMTP transport 
-    var transporter = nodemailer.createTransport('smtps://mkmpvtltd%40gmail.com:Password@smtp.gmail.com');
+    var transporter = nodemailer.createTransport(transpostString);
 
     // send mail with defined transport object 
     transporter.sendMail(mailOptions, function (error, info) {

@@ -1,0 +1,5 @@
+﻿{
+  "Email": {
+    "Transporter": "smtps://user%40gmail.com:password@smtp.gmail.com"
+  }
+}

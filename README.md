@@ -1,2 +1,9 @@
-# NodeJSWithVS
-Node js Express 3 Application To complete Application modification steps.
+﻿# Start
+
+
+Used NPM Library:
+* config
+* express
+* jade
+* nodemailer
+* stylus

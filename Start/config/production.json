@@ -1,1 +1,5 @@
-﻿
+﻿{
+  "Email": {
+    "Transporter": "smtps://productionUser%40gmail.com:password@smtp.gmail.com"
+  }
+}

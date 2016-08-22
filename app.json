@@ -1,0 +1,15 @@
+{
+  "name": "NodeJSWithVS",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}

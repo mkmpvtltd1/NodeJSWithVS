@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>Start</Name>
     <RootNamespace>Start</RootNamespace>
+    <NameOfLastUsedPublishProfile>huruko</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -31,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="routes\contact.js" />
     <Compile Include="routes\index.js" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +82,7 @@
     <Folder Include="typings\globals\config\" />
     <Folder Include="typings\globals\express\" />
     <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mongoose\" />
     <Folder Include="typings\globals\nodemailer\" />
     <Folder Include="typings\globals\node\" />
     <Folder Include="typings\globals\stylus\" />
@@ -89,6 +92,7 @@
     <TypeScriptCompile Include="typings\globals\config\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mongoose\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\nodemailer\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />

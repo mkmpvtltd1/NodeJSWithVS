@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "config": "^1.21.0",
-    "express": "3.4.4",
-    "jade": "*",
+    "express": "^3.4.4",
+    "jade": "^1.11.0",
     "nodemailer": "^2.5.0",
-    "stylus": "*"
+    "stylus": "^0.54.5"
   }
 }

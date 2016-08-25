@@ -7,9 +7,9 @@ exports.contactME = function (req, res) {
     var mailOptions = {
         from: '"' + config.get("Email.AdminName") + '👥" <' + config.get("Email.AdminEmail") + '>', // sender address 
         to: config.get("Email.AdminEmail"), // list of receivers , email can be spereated using coma','.
-        subject: 'Contact From Website ✔', // Subject line 
+        subject: 'Message from ' + req.body.name + ' ' + req.body.surname + '(' + req.body.email + ')', // Subject line 
         //  text: 'Hello world 🐴', // plaintext body 
-        html: '<b>Hello world 🐴</b>' // html body 
+        html: req.body.message // html body 
     };
     var nodemailer = require('nodemailer');
     var transpostString = config.get("Email.Transporter");

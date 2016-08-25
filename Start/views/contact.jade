@@ -3,59 +3,51 @@ extends layout
 block content
   h2 #{title}
   h3 #{message}
-  address
-    | One Microsoft Way
-    br
-    | Redmond, WA 98052-6399
-    br
-    abbr(title='Phone') P: 
-    | 425.555.0100
-  form#contact-form(role='form', action='contactME', method='post', novalidate='true')
+  form#contact-form(role='form', action='contact', method='post', novalidate='true',name='contact')
       .messages
       .controls
         .row
           .col-md-6
-            .form-group.has-error.has-danger
+            //-.has-error.has-danger
+            .form-group 
               label(for='form_name') Firstname *
               input#form_name.form-control(type='text', data-error='Firstname is required.', required='required', placeholder='Please enter your firstname *', name='name')
-              .help-block.with-errors
-                ul.list-unstyled
-                  li Firstname is required.
           .col-md-6
             .form-group
               label(for='form_lastname') Lastname *
               input#form_lastname.form-control(type='text', data-error='Lastname is required.', required='required', placeholder='Please enter your lastname *', name='surname')
-              .help-block.with-errors
         .row
           .col-md-6
             .form-group
               label(for='form_email') Email *
               input#form_email.form-control(type='email', data-error='Valid email is required.', required='required', placeholder='Please enter your email *', name='email')
-              .help-block.with-errors
           .col-md-6
             .form-group
               label(for='form_phone') Phone
               input#form_phone.form-control(type='tel', placeholder='Please enter your phone', name='phone')
-              .help-block.with-errors
         .row
-          .col-md-12
+          .col-md-6
             .form-group
               label(for='form_message') Message *
               textarea#form_message.form-control(data-error='Please,leave us a message.', required='required', rows='4', placeholder='Message for me *', name='message')
-              .help-block.with-errors
+          .col-md-6
+            .form-group
+              label(for='form_captcha') Captcha *
+              img#captchaForm(src='data:image/jpeg;base64, #{captcha}')
+              input#form_phone.form-control(type='tel', placeholder='Please enter captcha', name='captcha')
+              label.error(for='form_captcha') #{captcha_error}
+        .row
           .col-md-12
             input.btn.btn-success.btn-send(type='submit', value='Send message')
         .row
           .col-md-12
             p.text-muted
               strong *
-              |  These fields are required. Contact form template by 
-              a(target='_blank', href='http://bootstrapious.com') Bootstrapious
-              | .
+              |  These fields are required.
 
   address
     strong Support: 
-    a(href='mailto:Support@example.com') Support@example.com
-    br
-    strong Marketing: 
-    a(href='mailto:Marketing@example.com') Marketing@example.com
+    a(href='mailto:admin@contact.com') admin@contact.com
+
+block scripts
+    script(src='/javascripts/contact.validate.js')

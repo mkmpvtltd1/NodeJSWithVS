@@ -12,6 +12,7 @@
     "jade": "*",
     "mongoose": "^4.5.9",
     "nodemailer": "^2.5.0",
-    "stylus": "*"
+    "stylus": "*",
+    "captchapng": "^0.0.1"
   }
 }

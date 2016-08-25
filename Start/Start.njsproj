@@ -88,7 +88,6 @@
     <Folder Include="typings\globals\node\" />
     <Folder Include="typings\globals\stylus\" />
     <Folder Include="views\" />
-    <Folder Include="views\validation\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\config\index.d.ts" />

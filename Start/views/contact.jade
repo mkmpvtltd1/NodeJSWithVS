@@ -3,24 +3,16 @@ extends layout
 block content
   h2 #{title}
   h3 #{message}
-  address
-    | One Microsoft Way
-    br
-    | Redmond, WA 98052-6399
-    br
-    abbr(title='Phone') P: 
-    | 425.555.0100
-  form#contact-form(role='form', action='contactME', method='post', novalidate='true')
+  form#contact-form(role='form', action='contactSendMail', method='post', novalidate='true',name='contact')
       .messages
       .controls
         .row
           .col-md-6
-            .form-group.has-error.has-danger
+            //-.has-error.has-danger
+            .form-group 
               label(for='form_name') Firstname *
               input#form_name.form-control(type='text', data-error='Firstname is required.', required='required', placeholder='Please enter your firstname *', name='name')
               .help-block.with-errors
-                ul.list-unstyled
-                  li Firstname is required.
           .col-md-6
             .form-group
               label(for='form_lastname') Lastname *
@@ -49,13 +41,11 @@ block content
           .col-md-12
             p.text-muted
               strong *
-              |  These fields are required. Contact form template by 
-              a(target='_blank', href='http://bootstrapious.com') Bootstrapious
-              | .
+              |  These fields are required.
 
   address
     strong Support: 
-    a(href='mailto:Support@example.com') Support@example.com
-    br
-    strong Marketing: 
-    a(href='mailto:Marketing@example.com') Marketing@example.com
+    a(href='mailto:admin@contact.com') admin@contact.com
+
+block scripts
+    script(src='/javascripts/contact.validate.js')

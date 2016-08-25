@@ -2,14 +2,14 @@
 exports.contact = function (req, res) {
     res.render('contact', { title: 'Contact', year: new Date().getFullYear(), message: 'Your contact page' });
 };
-exports.contactME = function (req, res) {
+exports.contactSendMail = function (req, res) {
     var config = require('config');
     var mailOptions = {
         from: '"' + config.get("Email.AdminName") + '👥" <' + config.get("Email.AdminEmail") + '>', // sender address 
         to: config.get("Email.AdminEmail"), // list of receivers , email can be spereated using coma','.
         subject: 'Message from ' + req.body.name + ' ' + req.body.surname + '(' + req.body.email + ')', // Subject line 
         //  text: 'Hello world 🐴', // plaintext body 
-        html: req.body.message // html body 
+        html: 'Mobile:' + req.body.phone + '<br/>' + req.body.message // html body 
     };
     var nodemailer = require('nodemailer');
     var transpostString = config.get("Email.Transporter");

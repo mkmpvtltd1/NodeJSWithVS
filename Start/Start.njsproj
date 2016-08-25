@@ -34,6 +34,7 @@
     <Compile Include="app.js" />
     <Compile Include="routes\contact.js" />
     <Compile Include="routes\index.js" />
+    <Content Include="public\javascripts\contact.validate.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="config\default.json" />
@@ -87,6 +88,7 @@
     <Folder Include="typings\globals\node\" />
     <Folder Include="typings\globals\stylus\" />
     <Folder Include="views\" />
+    <Folder Include="views\validation\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="typings\globals\config\index.d.ts" />

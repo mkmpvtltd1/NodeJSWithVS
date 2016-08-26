@@ -4,7 +4,7 @@ block content
   h2 #{title}
   h3 #{message}
   form#contact-form(role='form', action='contact', method='post', novalidate='true',name='contact')
-      .messages
+      .messages #{response}
       .controls
         .row
           .col-md-6

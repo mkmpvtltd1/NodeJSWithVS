@@ -19,7 +19,8 @@ $(function () {
             message: {
                 required: true,
                 minlength: 5
-            }
+            },
+            captcha: { required: true, minlength: 4, maxlength: 4 }
         },
         // Specify validation error messages
         messages: {
@@ -29,7 +30,8 @@ $(function () {
                 required: "Please Write some message",
                 minlength: "Write some meaning full message"
             },
-            email: "Please enter a valid email address"
+            email: "Please enter a valid email address",
+            captcha: "Are u Humen?"
         },
         // Make sure the form is submitted to the destination defined
         // in the "action" attribute of the form when valid

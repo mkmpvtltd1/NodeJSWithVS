@@ -64,7 +64,6 @@
     <Content Include="public\stylesheets\bootstrap.min.css" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\contactSucess.jade" />
     <Content Include="views\contact.jade" />
     <Content Include="views\about.jade" />
     <Content Include="views\index.jade" />

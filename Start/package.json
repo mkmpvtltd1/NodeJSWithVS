@@ -7,12 +7,14 @@
     "name": "Manoj's PC"
   },
   "dependencies": {
+    "acl": "^0.4.9",
+    "captchapng": "^0.0.1",
     "config": "^1.21.0",
-    "express": "3.4.4",
-    "jade": "*",
-    "mongoose": "^4.5.9",
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "mongoose": "^4.5.10",
     "nodemailer": "^2.5.0",
-    "stylus": "*",
-    "captchapng": "^0.0.1"
+    "passport": "^0.3.2",
+    "stylus": "^0.54.5"
   }
 }

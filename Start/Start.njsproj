@@ -79,22 +79,26 @@
     <Folder Include="routes\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\acl\" />
     <Folder Include="typings\globals\config\" />
     <Folder Include="typings\globals\express\" />
     <Folder Include="typings\globals\jade\" />
     <Folder Include="typings\globals\mongoose\" />
     <Folder Include="typings\globals\nodemailer\" />
     <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\passport\" />
     <Folder Include="typings\globals\stylus\" />
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\acl\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\config\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\mongoose\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\nodemailer\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\passport\index.d.ts" />
     <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
     <TypeScriptCompile Include="typings\index.d.ts" />
   </ItemGroup>

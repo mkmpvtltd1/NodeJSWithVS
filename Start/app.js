@@ -32,6 +32,11 @@ app.get('/about', mainRoutes.about);
 app.get('/contact', contactRoutes.contact);
 app.post('/contact', contactRoutes.contactProcess);
 
-http.createServer(app).listen(app.get('port'), function () {
-    console.log('Express server listening on port ' + app.get('port'));
+http.createServer(app).listen(app.get('port'), (err) => {
+    if (err) {
+        console.log('something bad happened', err)
+    }
+    else {
+        console.log('Express server listening on port ' + app.get('port'));
+    }
 });

@@ -4,7 +4,7 @@
   "description": "Start",
   "main": "app.js",
   "author": {
-    "name": "Manoj's PC"
+    "name": "Manoj Kumar Mahato"
   },
   "dependencies": {
     "config": "^1.21.0",

@@ -1,8 +1,8 @@
 {
   "resolution": "main",
   "tree": {
-    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/0da790884ece889a38f7c655d3351c91b4b80848/mongoose/mongoose.d.ts",
-    "raw": "registry:dt/mongoose#4.5.4+20160807120805",
-    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/0da790884ece889a38f7c655d3351c91b4b80848/mongoose/mongoose.d.ts"
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/51c51f03549a63f8791865bf26480947e22f4902/mongoose/mongoose.d.ts",
+    "raw": "registry:dt/mongoose#4.5.9+20160826204928",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/51c51f03549a63f8791865bf26480947e22f4902/mongoose/mongoose.d.ts"
   }
 }
